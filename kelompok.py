@@ -26,7 +26,7 @@ st.markdown(f"Data Berdasarkan Item Purchased Per Season :")
 st.write( df[df['Season'] == 'Fall'])
 
 attributes = st.selectbox("Pilih Data yang dibutuhkan:", 
-                               options = ['Age', 'Gender', 'Item Purchased', 'Category', 'Purchase Amount (USD)', 'Location', 'Size', 'Color', 'Season', 'Review', 'Rating', 'Subscription', 'Status', 'Shipping', 'Type', 'Discount', 'Applied', 'Promo', 'Code', 'Used', 'Previous', 'Purchases', 'Payment Method', 'Frequency of Purchases'])
+                               options = ['Age', 'Gender', 'Item Purchased', 'Category', 'Purchase Amount (USD)', 'Location', 'Size', 'Color', 'Season', 'Review Rating', 'Subscription', 'Status', 'Shipping', 'Type', 'Discount', 'Applied', 'Promo', 'Code', 'Used', 'Previous', 'Purchases', 'Payment Method', 'Frequency of Purchases'])
 
 st.plotly_chart(
     px.histogram(
