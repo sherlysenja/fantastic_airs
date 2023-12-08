@@ -1,3 +1,4 @@
+#Sherly mengerjakan impor data frame, membuat judul, dan histogram gender
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -28,6 +29,7 @@ st.plotly_chart(plot_gender)
 with st.expander("Lihat Penjelasan"):
     st.write("Grafik ini menunjukkan bahwa Laki-laki lebih sering belanja dibandingkan perempuan.")
 
+#Azizah Amelia mengerjakan multi select season dan histogram dengan berbagai opsi
 Season_dict= st.multiselect('Season',
                             options= ['Winter', 'Spring', 'Fall', 'Summer'],
                             default=['Fall'] )
