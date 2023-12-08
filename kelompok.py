@@ -6,11 +6,8 @@ import plotly.express as px
 df = pd.read_csv('shoppingtrends.csv', sep =',')
 
 st.header("Data Tren Belanja Di Amerika:shopping_trolley:", divider = 'red')
-<<<<<<< HEAD
-st.subheader( 'Data ini disusun oleh _:blue[Fantastic_Airs]_ :fire: ')
-=======
 st.subheader('Data ini disusun oleh _:blue[Fantastic_Airs]_:fire:')
->>>>>>> b3376d98a051ca599eedfc07fd7da2c397b648c0
+
 st.write("""
 #### Nama Anggota:
 ##### Azizah Amelia Eka Susanti (02100221402)
