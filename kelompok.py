@@ -2,21 +2,31 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-df = pd.read_csv('shopping_trends.csv')
+df = pd.read_csv('shoppingtrends.csv', sep =',')
 
+st.header("Data Tren Belanja Di Amerika:shopping_trolley:", divider = 'red')
+st.subheader('Data ini disusun oleh _:blue[Fantastic_Airs]_:sunglassess:')
 st.write("""
-# Customer Shopping Trends Dataset
-
-## Kelompok : fantastic_airs
-
-### Nama Anggota:
-###### Sherly Senja Rindiani (021002214011)
-###### Rania Yasmin (021002214010)
-###### Indah Triend Elisabeth (021002101001)
-###### Azizah Amelia Eka Susanti (02100221402)
-
+#### Nama Anggota:
+##### Azizah Amelia Eka Susanti (02100221402)
+##### Indah Triend Elisabeth (021002101001
+##### Rania Yasmin (021002214010)
+##### Sherly Senja Rindiani (021002214011)
 
 """)
+
+st.dataframe(df)
+
+st.write("# Tren Belanja Berdasarkan Gender")
+plot_gender = px.histogram(df,
+                           x = 'Gender',
+                           title = 'Histogram Tren Belanja Berdasarkan Gender')
+plot_gender.update_layout(
+    xaxis_title = 'Gender',
+    yaxis_title = 'Jumlah')
+st.plotly_chart(plot_gender)
+with st.expander("Lihat Penjelasan"):
+    st.write("Grafik ini menunjukkan bahwa Laki-laki lebih sering belanja dibandingkan perempuan")
 
 Season_dict= st.multiselect('Season',
                             options= ['Winter', 'Spring', 'Fall', 'Summer'],
