@@ -6,7 +6,11 @@ import plotly.express as px
 df = pd.read_csv('shoppingtrends.csv', sep =',')
 
 st.header("Data Tren Belanja Di Amerika:shopping_trolley:", divider = 'red')
+<<<<<<< HEAD
 st.subheader( 'Data ini disusun oleh _:blue[Fantastic_Airs]_ :fire: ')
+=======
+st.subheader('Data ini disusun oleh _:blue[Fantastic_Airs]_:fire:')
+>>>>>>> b3376d98a051ca599eedfc07fd7da2c397b648c0
 st.write("""
 #### Nama Anggota:
 ##### Azizah Amelia Eka Susanti (02100221402)
@@ -47,8 +51,15 @@ st.plotly_chart(
         title = 'Line Chart Item Purchased'))
 
 #Indah mengerjakan visualisasi Purchased Amount berdasarkan Payment Method
-fig = px.pie(df, values = 'Purchase Amount (USD)', names='Payment Method', title='Purchased Amount berdasarkan Peyment Methond',color_discrete_sequence=px.colors.qualitative.Antique)
+fig = px.pie(df, values = 'Purchase Amount (USD)', names='Payment Method', title='Purchased Amount berdasarkan Payment Method',color_discrete_sequence=px.colors.qualitative.Antique)
 st.plotly_chart(fig)
 with st.expander("Lihat Penjelasan"):
     st.write("Grafik ini menunjukkan bahwa lebih banyak orang berbelanja dengan metode pembayaran Credit Card")
     
+
+
+#Rania mengerjakan visualisasi Purchased Amount berdasarkan Location
+plot_location = px.pie(df, values = 'Purchase Amount (USD)', names='Location', title='Purchased Amount berdasarkan Location',color_discrete_sequence=px.colors.qualitative.Set2)
+st.plotly_chart(plot_location)
+with st.expander("Lihat Penjelasan"):
+    st.write("Grafik ini menunjukkan bahwa ternyata tiap negara bagian di Amerika tidak memiliki perbedaan yang terlalu jauh dalam transaksi belanjanya. Montana adalah negara bagian Amerika yang paling banyak bertransaksi sebesar $ 5784")
