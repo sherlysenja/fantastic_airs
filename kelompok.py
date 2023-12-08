@@ -46,3 +46,9 @@ st.plotly_chart(
         x = attributes,
         title = 'Line Chart Item Purchased'))
 
+#Indah mengerjakan visualisasi Purchased Amount berdasarkan Payment Method
+fig = px.pie(df, values = 'Purchase Amount (USD)', names='Payment Method', title='Purchased Amount berdasarkan Peyment Methond',color_discrete_sequence=px.colors.qualitative.Antique)
+st.plotly_chart(fig)
+with st.expander("Lihat Penjelasan"):
+    st.write("Grafik ini menunjukkan bahwa lebih banyak orang berbelanja dengan metode pembayaran Credit Card")
+    
