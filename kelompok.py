@@ -26,7 +26,7 @@ plot_gender.update_layout(
     yaxis_title = 'Jumlah')
 st.plotly_chart(plot_gender)
 with st.expander("Lihat Penjelasan"):
-    st.write("Grafik ini menunjukkan bahwa Laki-laki lebih sering belanja dibandingkan perempuan")
+    st.write("Grafik ini menunjukkan bahwa Laki-laki lebih sering belanja dibandingkan perempuan.")
 
 Season_dict= st.multiselect('Season',
                             options= ['Winter', 'Spring', 'Fall', 'Summer'],
