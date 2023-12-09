@@ -60,3 +60,5 @@ plot_location = px.pie(df, values = 'Purchase Amount (USD)', names='Location', t
 st.plotly_chart(plot_location)
 with st.expander("Lihat Penjelasan"):
     st.write("Grafik ini menunjukkan bahwa ternyata tiap negara bagian di Amerika tidak memiliki perbedaan yang terlalu jauh dalam transaksi belanjanya. Montana adalah negara bagian Amerika yang paling banyak bertransaksi sebesar $ 5784")
+
+st.write("Thank you :blush:")
