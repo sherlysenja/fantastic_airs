@@ -58,7 +58,13 @@ with st.expander("Lihat Penjelasan"):
 #Rania mengerjakan visualisasi Purchased Amount berdasarkan Size dan Season
 plot_size = px.pie(df, values = 'Purchase Amount (USD)', names='Size', title='Purchased Amount berdasarkan Size',color_discrete_sequence=px.colors.qualitative.Set2)
 st.plotly_chart(plot_size)
+with st.expander("Lihat Penjelasan"):
+    st.write("Grafik ini menunjukkan bahwa lebih banyak orang yang menggunakan size M sebanyak 45.1% dengan purchased amount sebesar $105,167 sedangkan untuk yang paling sedikit dibeli adalah size XL sebanyak 11.1% dengan purchased amount sebesar $25,779")
 
+
+    
+plot_size = px.pie(df, values = 'Purchase Amount (USD)', names='Season', title='Purchased Amount berdasarkan Season',color_discrete_sequence=px.colors.qualitative.Set2)
+st.plotly_chart(plot_season)
 
 
 
