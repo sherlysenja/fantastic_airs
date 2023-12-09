@@ -55,10 +55,17 @@ with st.expander("Lihat Penjelasan"):
     
 
 
-#Rania mengerjakan visualisasi Purchased Amount berdasarkan Location
-plot_location = px.pie(df, values = 'Purchase Amount (USD)', names='Location', title='Purchased Amount berdasarkan Location',color_discrete_sequence=px.colors.qualitative.Set2)
-st.plotly_chart(plot_location)
+#Rania mengerjakan visualisasi Purchased Amount berdasarkan Size dan Season
+plot_size = px.pie(df, values = 'Purchase Amount (USD)', names='Size', title='Purchased Amount berdasarkan Size',color_discrete_sequence=px.colors.qualitative.Set2)
+st.plotly_chart(plot_size)
 with st.expander("Lihat Penjelasan"):
-    st.write("Grafik ini menunjukkan bahwa ternyata tiap negara bagian di Amerika tidak memiliki perbedaan yang terlalu jauh dalam transaksi belanjanya. Montana adalah negara bagian Amerika yang paling banyak bertransaksi sebesar $ 5784")
+    st.write("Grafik ini menunjukkan )
 
+
+
+
+
+             
+
+             
 st.write("Thank you :blush:")
