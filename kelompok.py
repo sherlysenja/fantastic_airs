@@ -58,8 +58,6 @@ with st.expander("Lihat Penjelasan"):
 #Rania mengerjakan visualisasi Purchased Amount berdasarkan Size dan Season
 plot_size = px.pie(df, values = 'Purchase Amount (USD)', names='Size', title='Purchased Amount berdasarkan Size',color_discrete_sequence=px.colors.qualitative.Set2)
 st.plotly_chart(plot_size)
-with st.expander("Lihat Penjelasan"):
-    st.write("Grafik ini menunjukkan )
 
 
 
