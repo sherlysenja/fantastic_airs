@@ -62,3 +62,5 @@ with st.expander("Lihat Penjelasan"):
     st.write("Grafik ini menunjukkan bahwa sebagian besar size yang dibeli size M dibanding size lainnya")
             
 st.write("Thank you :blush:")
+
+st.write("Sumber data: https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset")
